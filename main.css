@@ -5,32 +5,54 @@
     font-weight: normal;
     font-style: normal;
 }
-body {    
-    margin: 0 !important;
-    padding: 0 !important;
-    font-family: 'press_start_2pregular';
-}
 h1 {
-    background-color: #3399ff;
-    color: black;
+    padding: 70px;
+    text-align: center;
+    font-size: 50px;
+}
+body {    
+    background-image: url("images/clouds.gif");
+    background-size: 50%;
+    background-repeat: repeat-x;
+    background-color: #C1EBF9;
+    margin-bottom: 100px;
+    font-family: 'press_start_2pregular';
+    color: #167DC0;
+}
+.formDiv {
     text-align: center;
 }
+.options {
+    padding: 20px;
+}
+button {
+    background-color: #167DC0;
+    font-family: 'press_start_2pregular';
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 30px;
+}
+button:hover {
+    background-color: white;
+    color: #167DC0;
+}
 #footer{
-    position:fixed;
-    left:0px;
-    bottom:0px;
-    height:100px;
-    width:100%;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 100px;
+    width: 100%;
 }
 #dog {
     width: 100px;
     height: 100px;
-    bottom: 0px;
     position: fixed;
 }
 #water {
     width: 100%;
     height: 100px;
-    filter: saturate(7);
-    bottom: 0px;
+    filter: saturate(0.8);
+    position: fixed;
+    z-index: -1;
 }
