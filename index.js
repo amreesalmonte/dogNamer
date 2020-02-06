@@ -21,16 +21,36 @@ function moveDog() {
     }, 30);
 }
 
-function readFiles () {
-    // reads text files that contain the names and titles of dogs
-    var fs = require('fs');
-    var array = fs.readFileSync('files/gNames.txt').toString().split("\n");
-    for(i in array) {
-        console.log(array[i]);
+function validate() {
+    // validates if the user enters an empty form
+    var gender = document.getElementById("form").elements.namedItem("gender").value;
+    var haveTitle = document.getElementById("form").elements.namedItem("haveTitle").value;
+
+    if (gender == "" || haveTitle == "") {
+        document.getElementById("result").innerHTML = "you forgot to choose options :("
+    } else {
+        generateName(gender, haveTitle);
+    }
 }
+
+function generateName(gender, haveTitle) {  
+    // generateName generates the random dog name
+    if (gender == "male") {
+        var name = MaleName();
+    } else {
+        var name = FemaleName();
+    }
+
+    if (haveTitle == "yes") {
+        var title = Titles();
+    } else {
+        var title = "";
+    }
+
+    var dogName = title + " " + name;
+    document.getElementById("result").innerHTML = dogName;
 }
 
 window.onload = function() {
     moveDog();
-    readFiles();
 };

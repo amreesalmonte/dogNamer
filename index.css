@@ -6,7 +6,7 @@
     font-style: normal;
 }
 h1 {
-    padding: 70px;
+    padding: 30px;
     text-align: center;
     font-size: 50px;
 }
@@ -36,6 +36,11 @@ button {
 button:hover {
     background-color: white;
     color: #167DC0;
+}
+#result {
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
 }
 #footer{
     position: fixed;

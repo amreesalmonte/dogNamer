@@ -7,13 +7,14 @@
         <meta name = "viewport" content = "width=device-width, initial-scale=1">
         <link rel = "stylesheet" href = "index.css">
         <script src="index.js"></script>
+        <script src="generate.js"></script>
     </head>
     <body>
         <div id = "header">
             <h1>name my dog</h1>
         </div>
         <div class = "formDiv">
-            <form>
+            <form id = "form">
                 <div class = "options">
                     <input type = "radio" name = "gender" value = "male"> male
                     <input type = "radio" name = "gender" value = "female"> female
@@ -24,9 +25,12 @@
                     <input type = "radio" name = "haveTitle" value = "no"> no
                 </div>
                 <div class = "options">
-                    <button type = "button" onclick = None>generate</button>
+                    <button type = "button" onclick = validate()>generate</button>
                 </div>
             </form>
+        </div>
+        <div>
+            <p id = "result"></p>
         </div>
         <div id = "footer">
             <IMG id = "dog" src="images/swimming dog.gif">
