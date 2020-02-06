@@ -1,14 +1,15 @@
 @font-face {
-    font-family: 'press_start_2pregular';
-    src: url('fonts/pressstart2p-regular-webfont.woff2') format('woff2'),
-         url('fonts/pressstart2p-regular-webfont.woff') format('woff');
+    font-family: 'balooregular';
+    src: url('fontkit/baloo-regular-webfont.woff2') format('woff2'),
+         url('fontkit/baloo-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+
 }
 h1 {
-    padding: 30px;
+    padding: 20px;
     text-align: center;
-    font-size: 50px;
+    font-size: 60px;
 }
 body {    
     background-image: url("images/clouds.gif");
@@ -16,18 +17,23 @@ body {
     background-repeat: repeat-x;
     background-color: #C1EBF9;
     margin-bottom: 100px;
-    font-family: 'press_start_2pregular';
+    font-family: 'balooregular';
     color: #167DC0;
 }
 .formDiv {
     text-align: center;
 }
+.title {
+    font-size: 30px;
+}
 .options {
-    padding: 20px;
+    padding: 10px;
+    font-size: 25px;
 }
 button {
     background-color: #167DC0;
-    font-family: 'press_start_2pregular';
+    font-family: 'balooregular';
+    font-size: 20px;
     border: none;
     padding: 10px;
     color: white;
@@ -39,7 +45,7 @@ button:hover {
 }
 #result {
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     padding: 20px;
 }
 #footer{
